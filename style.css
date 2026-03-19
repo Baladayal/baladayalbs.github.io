@@ -1,0 +1,93 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #ffffff;
+  color: #222;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 80px;
+  background: white;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #eee;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 18px;
+  color: gray;
+}
+
+.sub {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 80px;
+}
+
+h2 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.skills-grid div {
+  background: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* CARD */
+.card {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  section {
+    padding: 40px 20px;
+  }
+
+  nav {
+    padding: 10px 20px;
+  }
+}
