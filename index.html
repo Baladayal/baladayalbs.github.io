@@ -1,114 +1,113 @@
-<!-- redeploy -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bala | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="bg-grid"></div>
+  <div class="blob blob-a"></div>
+  <div class="blob blob-b"></div>
+  <div class="blob blob-c"></div>
 
-<!-- NAVBAR -->
-<nav>
-  <h2>Bala</h2>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-  <h1>BALADAYAL B S</h1>
-  <p>Full Stack Software Engineer</p>
-  <p class="sub">
-    Healthcare Interoperability | FHIR | AI Video Analytics
-  </p>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    Full Stack Software Engineer with 4+ years of experience building scalable 
-    healthcare applications using Angular, Spring Boot, and PostgreSQL. 
-    Specialized in FHIR, HL7, and SMART on FHIR integrations. 
-    Also built AI-powered basketball analytics systems using YOLO and Roboflow.
-  </p>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-  <h2>Skills</h2>
-
-  <div class="skills-grid">
-    <div>Angular</div>
-    <div>Spring Boot</div>
-    <div>Node.js</div>
-    <div>PostgreSQL</div>
-    <div>FHIR / HL7</div>
-    <div>OAuth2</div>
-    <div>Java</div>
-    <div>TypeScript</div>
-    <div>Python</div>
-    <div>Keycloak</div>
-    <div>Apache NiFi</div>
-    <div>REST APIs</div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-  <h2>Experience</h2>
-
-  <div class="card">
-    <h3>Software Engineer</h3>
-    <span>Firmsoft Solutions | Sep 2021 – Present</span>
-    <ul>
-      <li>Developed healthcare web apps using Angular, Spring Boot, PostgreSQL</li>
-      <li>Implemented OAuth2 (PKCE, Auth Code) for secure EHR integrations</li>
-      <li>Built SMART on FHIR apps inside EHR systems</li>
-      <li>Developed CCDA validation workflows and pipelines</li>
-      <li>Created monitoring dashboards for APIs and Mirth channels</li>
-      <li>Integrated Apache NiFi for healthcare data processing</li>
+  <nav class="nav-wrap">
+    <div class="brand">BALA // PORTFOLIO</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-  </div>
+  </nav>
 
-</section>
+  <section class="hero reveal">
+    <div class="hero-copy">
+      <p class="eyebrow">Future-Ready Engineer</p>
+      <h1>BALADAYAL B S</h1>
+      <p>Full Stack Software Engineer</p>
+      <p class="sub">Healthcare Interoperability | FHIR | AI Video Analytics</p>
+      <a class="cta" href="#projects">View My Work</a>
+    </div>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <h2>Projects</h2>
+    <div class="photo-shell" id="photo-shell">
+      <div class="scanline"></div>
+      <img id="profile-image" src="assets/profile.jpg" alt="Baladayal portrait">
+      <div class="photo-fallback">B</div>
+    </div>
+  </section>
 
-  <div class="card">
-    <h3>AI Basketball Analytics</h3>
+  <section class="panel reveal" id="about">
+    <h2>About Me</h2>
     <p>
-      YOLO-based player detection system with event tracking and analytics dashboard.
+      Full Stack Software Engineer with 4+ years of experience building scalable
+      healthcare applications using Angular, Spring Boot, and PostgreSQL.
+      Specialized in FHIR, HL7, and SMART on FHIR integrations.
+      Also built AI-powered basketball analytics systems using YOLO and Roboflow.
     </p>
-    <span>Tech: Python, Roboflow, Node.js, Angular, PostgreSQL</span>
-  </div>
+  </section>
 
-  <div class="card">
-    <h3>FHIR EHR System</h3>
-    <p>
-      Full-stack healthcare system with secure OAuth2 authentication and clinical data management.
-    </p>
-    <span>Tech: Angular, Spring Boot, PostgreSQL, Keycloak</span>
-  </div>
+  <section class="panel reveal" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div>Angular</div>
+      <div>Spring Boot</div>
+      <div>Node.js</div>
+      <div>PostgreSQL</div>
+      <div>FHIR / HL7</div>
+      <div>OAuth2</div>
+      <div>Java</div>
+      <div>TypeScript</div>
+      <div>Python</div>
+      <div>Keycloak</div>
+      <div>Apache NiFi</div>
+      <div>REST APIs</div>
+    </div>
+  </section>
 
-</section>
+  <section class="panel reveal" id="experience">
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Software Engineer</h3>
+      <span>Firmsoft Solutions | Sep 2021 - Present</span>
+      <ul>
+        <li>Developed healthcare web apps using Angular, Spring Boot, PostgreSQL</li>
+        <li>Implemented OAuth2 (PKCE, Auth Code) for secure EHR integrations</li>
+        <li>Built SMART on FHIR apps inside EHR systems</li>
+        <li>Developed CCDA validation workflows and pipelines</li>
+        <li>Created monitoring dashboards for APIs and Mirth channels</li>
+        <li>Integrated Apache NiFi for healthcare data processing</li>
+      </ul>
+    </div>
+  </section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: baladayalbs@gmail.com</p>
-  <p>Phone: +91 9656869479</p>
-</section>
+  <section class="panel reveal" id="projects">
+    <h2>Projects</h2>
 
-<script src="script.js"></script>
+    <div class="card">
+      <h3>AI Basketball Analytics</h3>
+      <p>YOLO-based player detection system with event tracking and analytics dashboard.</p>
+      <span>Tech: Python, Roboflow, Node.js, Angular, PostgreSQL</span>
+    </div>
 
+    <div class="card">
+      <h3>FHIR EHR System</h3>
+      <p>Full-stack healthcare system with secure OAuth2 authentication and clinical data management.</p>
+      <span>Tech: Angular, Spring Boot, PostgreSQL, Keycloak</span>
+    </div>
+  </section>
+
+  <section class="panel reveal" id="contact">
+    <h2>Contact</h2>
+    <p>Email: baladayalbs@gmail.com</p>
+    <p>Phone: +91 9656869479</p>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
